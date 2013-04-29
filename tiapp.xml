@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">VsCQ5JZL7O4HqqMFPEC2KwQSffoRWEWP</property>
+    <property name="acs-oauth-key-production" type="string">S4z4eH7zmefBFH7N1vpPQSyz6W7ZTmqQ</property>
+    <property name="acs-api-key-production" type="string">j3mUFTUqNVha86joYCRreoSsRAGC5C5f</property>
+    <property name="acs-oauth-secret-development" type="string">HkN3J5KeOxRjgA6OjtduegXiJsNoLf2e</property>
+    <property name="acs-oauth-key-development" type="string">x7rxRhwGTAeJNXVSBlrFGiTiMvwK5SYk</property>
+    <property name="acs-api-key-development" type="string">x6cTHUmO7QET4E99hfX2iyYM1n04zP9e</property>
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>3.0.0.GA</sdk-version>
+    <id>de.appwerft.sturesy</id>
+    <name>StuReSy</name>
+    <version>1.0</version>
+    <publisher>fuerst</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2013 by fuerst</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>aea39cec-d5d4-48c8-bf44-dfccab7f1f4e</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+        <module platform="iphone">ti.barcode</module>
+        <module platform="android">ti.barcode</module>
+    </modules>
+</ti:app>
